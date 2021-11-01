@@ -1,0 +1,15 @@
+.register {
+    margin: 50px;
+}
+
+form > p {
+    color: red;
+}
+
+form > input, button{
+    display: block;
+    margin: 10px auto;
+    width: 300px;
+    height: 50px;
+    font-size: 1.5rem;
+}

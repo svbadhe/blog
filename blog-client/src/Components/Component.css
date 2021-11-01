@@ -1,0 +1,224 @@
+.app-header {
+    background-color: #1f2841;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+}
+
+.navbar-home-link {
+    text-decoration: none;
+    color: white;
+}
+
+.app-title {
+    font-size: calc(10px + 2vmin);
+    position: absolute;
+    left: 20%;
+}
+
+.app-nav-bar {
+    font-size: calc(5px + 2vmin);
+    position: absolute;
+    right: 20%;
+}
+
+.nav-bar-link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 8px;
+}
+
+.nav-bar-link:hover {
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+}
+
+.add-tile {
+    border: 2px solid rgb(153, 153, 153);
+    margin: 30px 25%;
+    border-radius: 5px;
+    position: relative;
+}
+
+hr {
+    height:1px;
+    border-width:0;
+    background-color:rgb(153, 153, 153);
+}
+
+.title {
+    margin: 5px auto;
+    height: 5vmin;
+    width: 90%;
+    display: block;
+    border: none;
+    border-radius: 3px;
+    font-size: calc(10px + 2vmin);
+}
+
+.title:focus, .content:focus, .submitButton:focus{
+    outline: none;
+}
+
+.content {
+    margin: 5px auto;
+    height: 10vmin;
+    width: 90%;
+    display: block;
+    border: none;
+    font-size: calc(5px + 2vmin);
+}
+
+.submitButton {
+    position: absolute;
+    right: 35px;
+    bottom: -35px;
+    font-size: 2.5rem;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 100%;
+}
+
+.submitButton:hover {
+    background-color: rgb(180, 180, 180);
+}
+
+option:default{
+    display: none;
+}
+
+option{
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    transition: 2s;
+    background-color:  #1f2841;
+}
+
+select{
+    background: transparent;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.dropdown{
+    background: transparent;
+    display: inline-block;
+    margin: 5px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 3px;
+}
+
+.loader > img{
+    position: absolute;
+    top: 40%;
+    height: 40px;
+    width: auto;
+    animation: loader 1s ease-in-out infinite;
+}
+
+@keyframes loader {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.blog-title{
+    text-decoration: none;
+    color: black;
+}
+
+.tile {
+    margin: 50px 25%;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.tileDateTime  {
+    color: grey;
+    margin: 0px 0px 10px 8px;
+}
+
+.tileTitle {
+    margin: 8px 0px 4px 8px;
+    font-size: calc(15px + 3vmin);
+    font-weight: 500;
+}
+
+.tileContent {
+    margin: 0px auto 10px auto;
+    height: min-content;
+    width: 90%;
+    display: block;
+    font-size: calc(5px + 3vmin);
+}
+
+@media (min-width: 600px) and (max-width: 992px) {
+    .tile {
+        margin: 45px 15%;
+    }
+    
+    .app-title {
+        left: 10%;
+    }
+
+    .app-nav-bar{
+        right: 10px;
+    }
+
+    .tileDateTime  {
+        font-size: 0.9rem;
+    }
+    
+    .submitButton {
+        right: 30px;
+        bottom: -30px;
+        font-size: 1.5rem;
+        height: 40px;
+        width: 40px;
+    }
+
+    .add-tile {
+        margin: 30px 15%;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .tile {
+        margin: 40px 10%;
+    }
+
+    select{
+        font-size: 1rem;
+    }
+
+    .app-title {
+        left: 5%;
+    }
+
+    .app-nav-bar{
+        right: 10px;
+    }
+
+    .tileDateTime  {
+        font-size: 0.8rem;
+    }
+
+    .submitButton {
+        right: 27.5px;
+        bottom: -27.55px;
+        font-size: 1.4rem;
+        height: 35px;
+        width: 35px;
+    }
+
+    
+    .add-tile {
+        margin: 30px 10%;
+    }
+}
